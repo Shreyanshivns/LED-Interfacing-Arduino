@@ -20,26 +20,6 @@ This project demonstrates a basic **LED chasing effect** using an Arduino board.
 - In the `loop()`, each LED is turned ON and OFF sequentially using a `for` loop and a 200 ms delay between each state change.
 - This creates a "chasing" or "running light" effect.
 
-### 💡 Code Snippet
-
-```cpp
-int timer = 200;
-void setup() {
-  for(int LED_PIN = 2; LED_PIN < 7; LED_PIN++) {
-    pinMode(LED_PIN, OUTPUT);
-  }
-}
-
-void loop() {
-  for(int LED_PIN = 2; LED_PIN < 7; LED_PIN++) {
-    digitalWrite(LED_PIN, HIGH);
-    delay(timer);
-    digitalWrite(LED_PIN, LOW);
-    delay(timer);
-  }
-}
-````
-
 ## 🔗 Tinkercad Simulation
 
 You can view and run the live simulation here:
